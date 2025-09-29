@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="Bootstrap/docs.css">
+	<script src="Bootstrap/bootstrap.bundle.min.js"></script>
+	<link href="carousel.css" rel="stylesheet">
+	<title>Profile Pribadi</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Carousel</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+					aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav me-auto mb-2 mb-md-0">
+						<li class="nav-item me-3 fs-4">
+							<a class="nav-link" href="Home.html">Home</a>
+						</li>
+						<li class="nav-item me-3 fs-4">
+							<a class="nav-link" href="#">Profile</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header><br><br>
+
+	<div class="container">
+		<header>
+			<img src="profile.jpg" alt="Foto Pribadi">
+			<h1 class="fade-in">Yosua Hutabarat</h1>
+			<p class="fade-in">Mahasiswa</p>
+		</header>
+
+		<section class="about">
+			<h2>Tentang Saya</h2>
+			<p>Masih belajar sih bang :v</p>
+		</section>
+
+		<section class="skills">
+			<h2>Keterampilan</h2>
+			<ul>
+				<li>HTML - *****</li>
+				<li>CSS - ****</li>
+				<li>JavaScript - ****</li>
+				<li>UI/UX Design - ***</li>
+				<li>React.js - ***</li>
+			</ul>
+		</section>
+
+		<video width="320" height="240" autoplay loop muted controls>
+			<source src="Tensura Movie.mp4" type="video/mp4">
+			<!--(autoplay) - Memainkan video secara otomatis
+			(loop) - Mengulang video setelah selesai
+			(Muted) - Biasanya diperlukan untuk autoplay di browser modern, karena banyak browser tidak mengizinkan video dengan suara untuk autoplay tanpa mute.
+
+			Format nya (autoplay loop muted controls)-->
+		</video>
+
+		<p><b>Tensura Movie</b></p>
+		<p>Nonton Film YOKKKK</p>
+
+		<section class="contact">
+			<h2>Kontak</h2>
+			<p>Email: a@a.com</p>
+			<p>Telepon: 0838-****-****</p>
+			<p><a href="https://www.linkedin.com/in/namaanda" target="_blank">LinkedIn</a> |
+				<a href="https://github.com/Yosua2005" target="_blank">GitHub</a>
+			</p>
+		</section>
+
+		<div class="tombol">
+			<button id="darkModeToggle">Mode Gelap</button>
+
+			<script>
+				const toggleButton = document.getElementById("darkModeToggle");
+				toggleButton.addEventListener("click", function () {
+					document.body.classList.toggle("dark-mode");
+				});
+			</script>
+		</div>
+
+		<footer>
+			<p>&copy; 2025 Nama Anda. Semua Hak Dilindungi.</p>
+		</footer>
+	</div>
+</body>
+
+</html>
